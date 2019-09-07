@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Distibutor.cs" />
+    <Compile Include="File.cs" />
     <Compile Include="ImageFile.cs" />
     <Compile Include="Movie.cs" />
     <Compile Include="MyList.cs" />

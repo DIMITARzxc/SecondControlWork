@@ -1,6 +1,7 @@
 ﻿namespace SecondCW
 {
-    public class ImageFile
+    public class ImageFile : File
     {
+
     }
 }

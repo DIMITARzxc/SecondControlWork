@@ -6,20 +6,24 @@ using System.Threading.Tasks;
 
 namespace SecondCW
 {
-     public class File
+    public class File
     {
-        public string _takestr { get; set; }
-        private string _name { get; set; }
-        private string _size { get; set; }
+        public  string Name { get; private set; }
+        public string Extension { get; private set; }
+        public  string Size { get; private set; }
 
-       
+
         
 
-        public  virtual void TakeString()
+        public virtual void TakeString(string input)
         {
-          
+            string[] splitInput = input.Split(new char[] { '(', ')', ';' }, StringSplitOptions.RemoveEmptyEntries);
+            string NameExtStr = splitInput[0];
+             Size = splitInput[1];
 
         }
-       
+
+
+        
     }
 }

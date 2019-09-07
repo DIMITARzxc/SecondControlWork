@@ -10,7 +10,8 @@ namespace SecondCW
     {
         static void Main(string[] args)
         {
-           
+            File main = new File();
+            //main.TakeString();
             string text = @"Text:file.txt(6B);Some string content
 Movie:logan.2017.mkv(19GB);1920x1080;2h12m
 Image:image.bmp(19MB);1920x1080";
@@ -25,7 +26,7 @@ Image:image.bmp(19MB);1920x1080";
                     case "text":
                         string[] splitText = split[1].Split(new char[] { '(', ')', ';' }, StringSplitOptions.RemoveEmptyEntries);
                         Console.WriteLine("Text");
-                        Console.WriteLine("Name:"+splitText[0]);
+                        Console.WriteLine("Name:" + splitText[0]);
                         Console.WriteLine("Exnesion:" + splitText[1]);
                         Console.WriteLine("Conntent:" + splitText[2]);
                         Console.ReadLine();
@@ -36,7 +37,7 @@ Image:image.bmp(19MB);1920x1080";
                         Console.WriteLine("Name:" + splitMovie[0]);
                         Console.WriteLine("Exnesion:" + splitMovie[1]);
                         Console.WriteLine("Screen size:" + splitMovie[2]);
-                        Console.WriteLine("Timing:" +splitMovie[3]);
+                        Console.WriteLine("Timing:" + splitMovie[3]);
                         Console.ReadLine();
                         break;
                     case "image":
@@ -45,12 +46,14 @@ Image:image.bmp(19MB);1920x1080";
                         Console.WriteLine("Name:" + splitImage[0]);
                         Console.WriteLine("Exnesion:" + splitImage[1]);
                         Console.WriteLine("Screen size:" + splitImage[2]);
-                       
+
                         Console.ReadLine();
                         break;
                     default:
                         break;
                 }
+
+
             }
         }
     }

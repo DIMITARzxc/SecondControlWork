@@ -8,6 +8,6 @@ namespace SecondCW
 {
     class Text : File
     {
-
+        public string Conntent { get; private set; }
     }
 }

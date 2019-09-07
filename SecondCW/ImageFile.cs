@@ -2,6 +2,7 @@
 {
     public class ImageFile : File
     {
+        public string Resolution { get; private set; }
 
     }
 }

@@ -10,6 +10,8 @@ namespace SecondCW
     {
         static void Main(string[] args)
         {
+            Distibutor check = new Distibutor();
+            check.TakeString();
         }
     }
 }

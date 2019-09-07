@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Distibutor.cs" />
-    <Compile Include="Image.cs" />
+    <Compile Include="ImageFile.cs" />
     <Compile Include="Movie.cs" />
     <Compile Include="MyList.cs" />
     <Compile Include="Program.cs" />

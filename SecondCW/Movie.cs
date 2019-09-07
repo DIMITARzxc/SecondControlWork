@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace SecondCW
 {
-   public class Movie : Distibutor
+   public class Movie : ImageFile 
     {
-        public new v 
+        
     }
 }

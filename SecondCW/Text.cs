@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SecondCW
 {
-    class Text : Distibutor
+    class Text : File
     {
 
     }

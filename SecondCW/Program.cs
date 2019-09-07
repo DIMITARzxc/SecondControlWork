@@ -10,7 +10,7 @@ namespace SecondCW
     {
         static void Main(string[] args)
         {
-            Distibutor check = new Distibutor();
+            File check = new File();
             check.TakeString();
         }
     }

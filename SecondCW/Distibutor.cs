@@ -6,26 +6,36 @@ using System.Threading.Tasks;
 
 namespace SecondCW
 {
-     public class Distibutor
+     public class File
     {
         public string _takestr { get; set; }
         private string _name { get; set; }
         private string _size { get; set; }
 
-        
+       
         
 
         public  virtual void TakeString()
         {
-            _takestr = "Text:file.txt(6B);Some string content";
-            string[] substr = _takestr.Split(':');
-            Console.WriteLine(substr[0]);
-            if (substr[0] == "Text")
+           string  text = "Text:file.txt(6B);Some string content";
+            MyList res = new MyList();
+            string[] files = text.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            for(int i=0; i<files.Length; i++)
             {
-                string[] namestr = _takestr.Split('(');
-                Console.WriteLine(namestr[0]);
+                string fileType = files[i].Split(':')[0].ToLower();
+                switch (fileType)
+                {
+                    case "text":
+                        
+                        break;
+                    case "movie":
+                        break;
+                    case "image":
+                        break;
+                    default:
+                        break;
+                }
             }
-            Console.ReadLine();
 
         }
        

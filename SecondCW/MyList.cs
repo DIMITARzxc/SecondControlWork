@@ -45,7 +45,7 @@ namespace SecondCW
             }
         }
 
-        public void Add(int newValue)
+        public void Add(object newValue)
         {
             if (LastIndex == _capacity)
             {

@@ -9,5 +9,9 @@ namespace SecondCW
     class Text : File
     {
         public string Conntent { get; private set; }
+        public override void Parse()
+        {
+            base.Parse();
+        }
     }
 }

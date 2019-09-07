@@ -8,6 +8,9 @@ namespace SecondCW
 {
    public class Movie : ImageFile 
     {
-        
+        public override void Parse()
+        {
+            base.Parse();
+        }
     }
 }
